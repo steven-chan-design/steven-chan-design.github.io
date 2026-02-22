@@ -55,7 +55,7 @@ html {
     transition: all 0.3s ease;
 }
 .detail-img {
-    width:50%;
+    max-width:52rem;
     height: auto;
 }
 
@@ -89,7 +89,7 @@ figcaption {
 }
 
 .portrait-img{
-    width: 25%;
+    width: 20rem;
     height: auto;
 }
 
@@ -100,7 +100,7 @@ figcaption {
 }
 
 .square-img {
-    width: 30%;
+    width: 20rem;
     height: auto;
 }
 
@@ -129,19 +129,26 @@ figcaption {
     margin-top: 3rem;
 }
 
+.image-gallary{
+    display: inline-block;
+}
+
 @media (max-aspect-ratio:1/1.20){
 
     .text-container {
         width: 95%;
     }
 
-    .detail-img,
-    .square-img {
+    .detail-img{
         width: 95%;
     }
 
+    .square-img {
+        width: 65%;
+    }
+
     .portrait-img {
-        width: 70%;
+        width: 45%;
     }
 }
 
