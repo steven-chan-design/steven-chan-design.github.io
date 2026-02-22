@@ -58,6 +58,23 @@ html {
     height: auto;
 }
 
+.gif-icon{
+    position: relative;
+}
+.gif-icon::after{
+    content: "GIF";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+    outline-width: 0.125rem;
+    outline-color: var(--clr-border);
+    outline-style: solid;
+    background-color: var(--clr-background);
+}
+
 .detail-img img {
     width:100%;
     height: auto;
