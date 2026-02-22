@@ -121,7 +121,7 @@ figcaption {
     margin-bottom: 1rem;
 }
 
-#Tools-Used, #Duration, .top-margin{
+.top-margin, #Tools-Used, #Duration{
     margin-top: 1rem;
 }
 
