@@ -24,6 +24,7 @@ html {
 }
 
 .highlight {
+    padding: 0.5rem;
     background-color: var(--clr-background);
 }
 
@@ -110,10 +111,22 @@ figcaption {
 }
 
 .text-container {
-    max-width:48rem;
+    max-width:52rem;
     outline-width: 0.125rem;
     transition: all 0.3s ease;
     margin: 2rem;
+}
+
+#Role-Header {
+    margin-bottom: 1rem;
+}
+
+#Tools-Used, #Duration{
+    margin-top: 1rem;
+}
+
+#Details{
+    margin-top: 3rem;
 }
 
 @media (max-aspect-ratio:1/1.20){

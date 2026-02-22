@@ -206,9 +206,17 @@ a:hover, a:focus {
     transform: translateY(-0.125rem);
 }
 
-p {
+p, ul, li {
     font-family: 'Nunito Sans';
     color: var(--clr-text);
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+li::marker{
+    color: var(--clr-primary);
 }
 
 /* Header Breaks */
