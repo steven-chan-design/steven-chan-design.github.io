@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quebec Carnival Dynamic Map</title>
+    <!-- added banding to favicon https://www.w3schools.com/html/html_favicon.asp-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- linking to google fonts: code generated using https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+
+    <header class="sticky top-header">
+        <div class="container top-container">
+            <a href="index.html" class="top-branding">
+                <img class="top-logo" src="img/steven_chan_logo.webp" alt="go to homepage" width="250" height="250">
+                <p class="top-name">Steven Chan</p>
+            </a>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="quebecCarnival.html">Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Map from project -->
+        <div id="map">
+            <!-- Map Image -->
+            <picture>
+              <source class="map" media="(min-aspect-ratio:177/125)" srcset="img/projects/quebec-carnival/maps/mapfinal-3840-2160.webp">
+              <source class="map" media="(min-aspect-ratio:7/10)" srcset="img/projects/quebec-carnival/maps/mapfinal-2160-2160.webp">
+              <img class="map" src="img/projects/quebec-carnival/maps/mapfinal-975-2110.webp"
+                alt="a windy cartoon winter road with trees, snow piles, and old-fashioned lamp posts">
+            </picture>
+
+            <section class="container hero">
+                <h1><span class="highlight">Québec Carnival Dynamic Map</span></h1>
+                <h2><span class="highlight">Microsite Project</span></h2>
+            </section>
+        
+            <!-- Map Activity Icons -->
+            <a href="#Details" class="ice-canoeing-icon activity-icon exclude-hover"><img src="img/projects/quebec-carnival/map-icons/ice-canoeing-icon.png" width="300"
+                data-box='1' class="box" alt="kayak that goes to project details"></a>
+        
+            <a href="#Details" class="dog-sledding-icon activity-icon exclude-hover"><img src="img/projects/quebec-carnival/map-icons/dog-sledding-icon.png" width="300"
+                data-box='0' class="box" alt="wooden sled that goes to project details"></a>
+        
+            <a href="#Details" class="parade-icon activity-icon exclude-hover"><img src="img/projects/quebec-carnival/map-icons/parade-icon.png" width="300" data-box='2'
+                class="box" id="parade" alt="a parading that goes to project details"></a>
+        
+            <a href="#Details" class="canadian-food-icon activity-icon exclude-hover"><img src="img/projects/quebec-carnival/map-icons/canadian-food-icon.png" width="300"
+                data-box='3' class="box" alt="food truck that goes to project details"></a>
+        
+            <a href="#Details" class="ice-palace-icon activity-icon exclude-hover"><img src="img/projects/quebec-carnival/map-icons/ice-palace-icon.png" width="300"
+                data-box='4' class="box" alt="ice sculpture that goes to project details"></a>
+        
+            <a href="#Details" class="concert-icon activity-icon exclude-hover"><img src="img/projects/quebec-carnival/map-icons/concert-icon.png" width="300" data-box='5'
+                class="box" id="stage" alt="a concert stage that goes to project details"></a>
+        
+            </div>
+            <!-- ****** Map Section Ends ****** -->
+        <!-- Map from project -->
+
+        <section class="container details">
+            <div class="column-1">
+                <div class="text-container">
+                    <h3 id="Details">Details</h3>
+                    <p>Québec Carnival Dynamic Map was a microsite based on Carnaval de Québec that provides a responsive interactive map inspired by Disney’s Club Penguin Map.
+                        This team project consisted of 5 members. As Lead Designer and Developer of the interactive map section, I sketched stylized map foundations, discussed creative additions with artists on the team, and developed the dynamic placement of information icons. Additionally, I focused on the responsiveness of the map and tailored the experience to fit the dimensions of the microsite.
+                        Québec Carnival Dynamic Map was created in 2023 for a 13-week class at Simon Fraser University. 
+                    </p>
+                </div>
+
+                <figure class="detail-figure detail-img">
+                    <img loading="lazy" src="img/projects/quebec-carnival/responsive-demo-wide-1280.gif" alt="gif of the responsive views" width="1920" height="1080">
+                    <figcaption>A gif demonstrating the responsive map of the original project</figcaption>
+                </figure>
+                
+                <figure class="detail-figure portrait-img">
+                    <img loading="lazy" class="portrait-img" src="img/projects/quebec-carnival/mobile-map-demo-tall-1280.gif" alt="gif of the mobile scrolling" width="1080" height="1920">
+                    <figcaption>A gif demonstrating the mobile form factor scrolling</figcaption>
+                </figure>
+
+                <div class="text-container">
+                    <h3>Process</h3>
+                    <h4>Ideation</h4>
+                    <p>During our team ideation meeting, we noticed the cluttered nature of Carnaval de Québec’s traditional map. Afterwards, I proposed the creation of a user-friendly interactive map as the microsite’s key feature. The decision to use a cartoon-style map heavily inspired by Club Penguin had the Carnival’s winter theme and all-age community in mind. First, I used Photoshop to sketch a low-fidelity mockup of the map to receive feedback from the team and class.
+                    </p>
+                </div>
+
+                <figure class="detail-figure detail-img">
+                    <img loading="lazy" class="detail-img" src="img/projects/quebec-carnival/Stage2-Minimum-Viable-Product.png" alt="screenshot of map MVP" width="1920" height="1080">
+                    <figcaption>An initial sketch of the map</figcaption>
+                </figure>
+
+                <div class="text-container">
+                    <h4>Prototyping</h4>
+                    <p>With adjustments based on the feedback, I moved into wireframing in Figma for smartphones, tablets, and desktops. The wireframes help guide the interactive icon placement while scripting the HTML and CSS.
+                    </p>
+                </div>
+
+                <figure class="detail-figure detail-img">
+                    <img loading="lazy" class="detail-img" src="img/projects/quebec-carnival/Stage3-web-wireframe.png" alt="screenshot desktop map wireframe" width="1920" height="1080">
+                    <figcaption>A wireframe of the desktop form factor map</figcaption>
+                </figure>
+
+                <figure class="detail-figure square-img">
+                    <img loading="lazy" class="detail-img" src="img/projects/quebec-carnival/Stage3-tablet-wireframe.png" alt="screenshot tablet map wireframe" width="1080" height="1080">
+                    <figcaption>A wireframe of the tablet form factor map</figcaption>
+                </figure>
+                
+                <div class="text-container">
+                    <h4>An issue we Fixed</h4>
+                    <p>One user interface issue we found was the lack of affordable provided before hovering over icons. Users did not realize the elements were clickable. To solve this, we added a subtle looping bounce animation to the CSS which separated the icons from the background image.
+                    </p>
+                </div>
+
+                <figure class="detail-figure detail-img">
+                    <img loading="lazy" class="detail-img" src="img/projects/quebec-carnival/interactivity-issue-demo-wide-1280.gif" alt="gif of the map icons blending into the background" width="1920" height="1080">
+                    <figcaption>A gif demonstrating how the interactive icons blend into the map when they do not bounce. </figcaption>
+                </figure>
+                
+                <div class="text-container">
+                    <h4>Final Thoughts</h4>
+                    <p>The Québec Carnival Dynamic Map improve my skills in responsive web design and its incorporation into creative ideas to make functioning prototypes. I began by planning wireframes with different screen sizes to support responsive viewing of the map. Then, by collecting client and peer feedback, I iterated on the original design to improve clarity, and visual interest.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container low-container">
+            <p>© 2025 Steven Chan</p>
+            <ul class="low-contact">
+                <li>
+                    <a class="icon-link" href="https://www.youtube.com/@stevenchan28">
+                        <img class="icon" src="img/icon/youtube.svg" alt="youtube" width="16" height="16">
+                    </a>
+                </li>
+                <li>
+                    <a class="icon-link" href="https://github.com/ColdCloak">
+                        <img class="icon" src="img/icon/github.svg" alt="github" width="16" height="16">
+                    </a>
+                </li>
+                <li>
+                    <a class="icon-link" href="https://www.linkedin.com/in/steven-chan-142183275/">
+                        <img class="icon" src="img/icon/linkedin.svg" alt="linkedin" width="16" height="16">
+                    </a>
+                </li>
+                <li>
+                    <!-- how to href email https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto -->
+                    <a class="icon-link" href="mailto:stevenchan350@gmail.com">
+                        <img class="icon" src="img/icon/mail.svg" alt="email" width="16" height="16">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+main {
+}
+
+.hero {
+    display: flex;
+    padding: 0 2rem;
+    height: calc(80vh - 6.075rem);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero p {
+    font-family: 'Sometype Mono';
+    font-size: 2.438rem;
+    max-width: 66%;
+    font-weight: bold;
+}
+.projects {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.column-1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.content-card {
+    width:66%;
+    display: inline-block;
+    outline-width: 0.125rem;
+    outline-color: #1F2528;
+    outline-style: solid;
+    background-color: #FAFCFC;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.content-card-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.content-card-text {
+    max-width: 80%;
+}
+
+.content-card-actions {
+    align-content: end;
+}
+
+.content-card-arrow {
+    display: inline-flex;
+    padding: 0.5rem;
+    /* outlines https://www.w3schools.com/css/css_outline.asp*/
+    outline-width: 0.125rem;
+    outline-color: var(--clr-text);
+    outline-style: solid;
+    background-color: var(--clr-background);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.content-card-arrow:hover, .content-card-arrow:focus {
+    outline-color: var(--clr-primary);
+    transform: translateX(0.125rem);
+}
+
+.content-card-arrow:hover img, .content-card-arrow:focus img{
+    filter: invert(50%) sepia(6%) saturate(3541%) hue-rotate(165deg) brightness(101%) contrast(90%);
+}
+
+.content-card img {
+    width: 100%;
+    height: auto
+}
+
+
+.content-card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+/* media breakpoints*/
+@media (width < 40rem){
+    .hero p {
+        font-size: 1.625rem;
+        max-width: 100%;
+    }
+
+    .content-card {
+        width:95%;
+    }
+}
+
+@media (height < 35rem) {
+    
+    .hero {
+        padding: 2rem 2rem;
+        height: fit-content;
+    }
+
+    .hero p {
+        font-size: 1.625rem;
+        max-width: 100%;
+    }
+}
+
+
